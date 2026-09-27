@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lovingublog-lab.github.io/work-tool-note/sitemap.xml
+Sitemap: https://worktoolnote.com/sitemap.xml

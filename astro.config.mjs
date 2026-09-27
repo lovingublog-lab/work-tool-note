@@ -1,2 +1,2 @@
 import { defineConfig } from 'astro/config';
-export default defineConfig({site:'https://lovingublog-lab.github.io',base:'/work-tool-note',trailingSlash:'always'});
+export default defineConfig({site:'https://worktoolnote.com',base:'/',trailingSlash:'always'});

@@ -5,7 +5,7 @@ pubDate: 2026-09-28
 category: "PDF"
 tags: ["PDF", "파일압축", "문서작업", "업무도구"]
 featured: true
-image: "/work-tool-note/images/reduce-pdf-file-size.svg"
+image: "/images/reduce-pdf-file-size.svg"
 imageAlt: "PDF 문서 파일 크기를 줄이는 압축 과정을 표현한 업무 도구 일러스트"
 draft: false
 ---
