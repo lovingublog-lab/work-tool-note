@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';import ArticleCard from '../../components/ArticleCard.astro';import {getCollection} from 'astro:content';const posts=(await getCollection('blog',({data})=>!data.draft)).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
+---
+<BaseLayout title="전체 글" description="업무도구노트의 업무 생산성 실용 가이드를 모아봅니다."><section class="section"><div class="container"><h1>전체 글</h1><div class="grid">{posts.map(p=><ArticleCard post={p}/>)}</div></div></section></BaseLayout>

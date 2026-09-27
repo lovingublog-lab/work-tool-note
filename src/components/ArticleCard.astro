@@ -1,0 +1,4 @@
+---
+const {post}=Astro.props;const base=import.meta.env.BASE_URL,d=post.data;
+---
+<article class="card"><div class="kicker">{d.category}</div><h2><a href={`${base}blog/${post.slug}/`}>{d.title}</a></h2><p>{d.description}</p><small>{new Intl.DateTimeFormat('ko-KR',{year:'numeric',month:'long',day:'numeric'}).format(d.pubDate)}</small></article>

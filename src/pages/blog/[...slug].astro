@@ -1,0 +1,4 @@
+---
+import {getCollection} from 'astro:content';import BaseLayout from '../../layouts/BaseLayout.astro';export async function getStaticPaths(){const posts=await getCollection('blog',({data})=>!data.draft);return posts.map(post=>({params:{slug:post.slug},props:{post}}))}const {post}=Astro.props;const {Content}=await post.render();const d=post.data;
+---
+<BaseLayout title={d.title} description={d.description} article={true} publishedTime={d.pubDate.toISOString()} modifiedTime={d.updatedDate?.toISOString()}><article class="article"><div class="kicker">{d.category}</div><h1>{d.title}</h1><p class="lead">{d.description}</p><p><small>{new Intl.DateTimeFormat('ko-KR',{year:'numeric',month:'long',day:'numeric'}).format(d.pubDate)}</small></p><Content/></article></BaseLayout>
