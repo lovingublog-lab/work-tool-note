@@ -1,6 +1,6 @@
 ---
 import {getCollection} from 'astro:content';import BaseLayout from '../../layouts/BaseLayout.astro';
-export async function getStaticPaths(){const posts=await getCollection('blog',({data})=>!data.draft);return posts.map(post=>({params:{slug:post.slug},props:{post}}))}
+export async function getStaticPaths(){const now=new Date();const posts=await getCollection('blog',({data})=>!data.draft&&data.pubDate<=now);return posts.map(post=>({params:{slug:post.slug},props:{post}}))}
 const {post}=Astro.props;const {Content}=await post.render();const d=post.data;
 ---
 <BaseLayout title={d.title} description={d.description} image={d.image} imageAlt={d.imageAlt} article={true} publishedTime={d.pubDate.toISOString()} modifiedTime={d.updatedDate?.toISOString()}><div class="article-wrap"><article class="article"><div class="kicker">{d.category}</div><h1>{d.title}</h1><p class="lead">{d.description}</p><p><small>{new Intl.DateTimeFormat('ko-KR',{year:'numeric',month:'long',day:'numeric'}).format(d.pubDate)}</small></p>{d.image&&<div class="article-hero"><img src={d.image} alt={d.imageAlt||d.title} width="1200" height="675" loading="eager" decoding="async"/></div>}<Content/></article></div></BaseLayout>
