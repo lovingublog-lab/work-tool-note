@@ -1,5 +1,5 @@
 ---
-title: "회의록 정리하는 법: 결정사항과 할 일을 한눈에 남기는 구조"
+title: "회의록에서 결정사항과 할 일을 한눈에 정리하는 방법"
 description: "회의록을 길게 받아 적는 대신 결정사항, 담당자, 기한, 미결 이슈를 빠르게 정리하고 회의 후 바로 활용할 수 있는 작성 구조를 정리합니다."
 pubDate: 2026-09-28T12:33:00+09:00
 category: "생산성"
@@ -193,6 +193,6 @@ draft: false
 
 ## 관련 글과 참고 자료
 
-회의 기록 파일이 쌓이기 시작했다면 [업무 파일명 정리 규칙](/blog/work-file-naming-rules/)도 함께 적용하면 회의록과 첨부 문서를 찾기 쉬워집니다.
+회의 기록 파일이 쌓이기 시작했다면 [업무 파일명 규칙](/blog/work-file-naming-rules/)도 함께 적용하면 회의록과 첨부 문서를 찾기 쉬워집니다.
 
 Microsoft Teams에서 회의 전·중·후에 안건, 메모, 작업을 함께 관리하는 기능은 [Microsoft 지원의 Teams 회의 메모 안내](https://support.microsoft.com/ko-kr/teams/meetings/take-meeting-notes-in-microsoft-teams)에서 최신 사용 방법을 확인할 수 있습니다.
