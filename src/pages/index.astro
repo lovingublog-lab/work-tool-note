@@ -2,16 +2,50 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import {getCollection} from 'astro:content';
-const now=new Date();
-const posts=(await getCollection('blog',({data})=>!data.draft&&data.pubDate<=now)).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
+
+const now = new Date();
+const posts = (await getCollection('blog', ({data}) => !data.draft && data.pubDate <= now))
+  .sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
+const featured = posts[0];
+const latest = posts.slice(1,7);
+const base = import.meta.env.BASE_URL;
 ---
 <BaseLayout title="PDF·문서·AI 업무도구 실용 가이드" description="PDF, 문서, 이메일, 스프레드시트, AI 업무도구와 파일 관리를 실제 업무에 바로 적용할 수 있게 정리하는 생산성 실용 정보 블로그입니다.">
-  <section class="hero hero-compact"><div class="container">
-    <h1>반복 업무는 줄이고, 중요한 일에 집중하세요.</h1>
-    <p>문서, 이메일, PDF, 스프레드시트와 AI 업무도구를 실제 업무에 바로 적용할 수 있게 정리합니다.</p>
-  </div></section>
-  <section class="section section-latest"><div class="container">
-    <div class="section-head"><div><div class="eyebrow">Latest</div><h2>최근 글</h2></div></div>
-    <div class="grid">{posts.slice(0,6).map(p=><ArticleCard post={p}/>)}</div>
-  </div></section>
+  <section class="masthead">
+    <div class="container masthead-inner">
+      <div>
+        <div class="masthead-kicker">Work Tools Journal</div>
+        <h1>업무도구노트</h1>
+        <p>문서·PDF·이메일·스프레드시트·AI 도구를 더 빠르고 깔끔하게 쓰는 업무 가이드</p>
+      </div>
+      <div class="masthead-topics" aria-label="주요 주제">PDF · 문서 · 이메일 · 스프레드시트 · AI</div>
+    </div>
+  </section>
+
+  {featured && <section class="section editorial-section">
+    <div class="container">
+      <article class="editorial-feature">
+        {featured.data.image && <a class="editorial-feature-media" href={`${base}blog/${featured.slug}/`}>
+          <img src={featured.data.image} alt={featured.data.imageAlt || featured.data.title} width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" />
+        </a>}
+        <div class="editorial-feature-copy">
+          <div class="eyebrow">Newest</div>
+          <h2><a href={`${base}blog/${featured.slug}/`}>{featured.data.title}</a></h2>
+          <p>{featured.data.description}</p>
+          <div class="feature-meta"><span>{featured.data.category}</span><span>{new Intl.DateTimeFormat('ko-KR',{year:'numeric',month:'long',day:'numeric'}).format(featured.data.pubDate)}</span></div>
+          <a class="read-link" href={`${base}blog/${featured.slug}/`}>글 읽기 →</a>
+        </div>
+      </article>
+    </div>
+  </section>}
+
+  <section class="section latest-section">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="eyebrow">Latest Posts</div><h2>최근 글</h2></div>
+        <a class="text-link" href={`${base}articles/`}>전체 글 보기 →</a>
+      </div>
+      <div class="grid">{latest.map(post => <ArticleCard post={post} />)}</div>
+    </div>
+  </section>
 </BaseLayout>
