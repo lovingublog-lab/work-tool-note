@@ -1,5 +1,5 @@
 ---
-title: "업무 파일명 정리 규칙: 날짜·버전·프로젝트명을 헷갈리지 않게 쓰는 법"
+title: "업무 파일명은 어떻게 정할까? 날짜·버전·프로젝트명 규칙"
 description: "문서와 PDF 파일이 쌓일 때 날짜, 프로젝트명, 문서 종류, 버전을 어떤 순서로 적으면 찾기 쉬운지 실무용 파일명 규칙을 예시와 함께 정리합니다."
 pubDate: 2026-09-28T11:28:00+09:00
 category: "파일 관리"
@@ -151,6 +151,6 @@ report_2026-09-28_v01.pdf
 
 ## 관련 글과 참고 자료
 
-파일명 규칙을 정한 뒤 회의 문서까지 같은 방식으로 관리하려면 [회의록 정리하는 법](/blog/meeting-notes-action-items/)도 참고할 수 있습니다.
+파일명 규칙을 정한 뒤 회의 문서까지 같은 방식으로 관리하려면 [회의록 정리 방법](/blog/meeting-notes-action-items/)도 참고할 수 있습니다.
 
 클라우드 동기화 폴더에서는 서비스별 파일명 제한이 있을 수 있습니다. OneDrive와 SharePoint의 허용되지 않는 문자, 파일·경로 길이 등 최신 제한은 [Microsoft 지원의 OneDrive·SharePoint 제한 안내](https://support.microsoft.com/en-us/onedrive/restrictions-and-limitations-in-onedrive-and-sharepoint)에서 확인할 수 있습니다.
