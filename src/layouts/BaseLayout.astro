@@ -33,7 +33,7 @@ const jsonLd=article?{'@context':'https://schema.org','@graph':[
 <meta name="theme-color" content="#5557a6"/><script type="application/ld+json" set:html={JSON.stringify(jsonLd)}/>
 {article&&<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9371741860593701" crossorigin="anonymous"></script>}
 </head><body>
-<header><div class="container nav"><a class="brand" href={base}>업무도구노트</a><nav><a href={base}>홈</a><a href={`${base}articles/`}>전체 글</a><a href={`${base}about/`}>소개</a><a href={`${base}contact/`}>문의</a><a href={`${base}search/`}>검색</a></nav></div></header>
+<header><div class="container nav"><a class="brand" href={base}>업무도구노트</a><nav class="desktop-nav" aria-label="주요 메뉴"><a href={base}>홈</a><a href={`${base}articles/`}>전체 글</a><a href={`${base}about/`}>소개</a><a href={`${base}contact/`}>문의</a><a href={`${base}search/`}>검색</a></nav><details class="mobile-menu"><summary>메뉴</summary><nav class="mobile-menu-panel" aria-label="모바일 메뉴"><a href={base}>홈</a><a href={`${base}articles/`}>전체 글</a><a href={`${base}search/`}>검색</a><a href={`${base}about/`}>소개</a><a href={`${base}contact/`}>문의</a></nav></details></div></header>
 <main><slot/></main>
 <footer><div class="container foot"><strong>업무도구노트</strong><span>문서, 이메일, PDF, 스프레드시트, AI 등 직장인의 업무 생산성을 높이는 실용 가이드</span><div><a href={`${base}privacy/`}>개인정보처리방침</a> · <a href={`${base}contact/`}>문의</a> · <a href={`${base}rss.xml`}>RSS</a></div></div></footer>
   <script is:inline>
