@@ -1,7 +1,7 @@
 ---
 title: "PDF 여러 개를 합칠 때 페이지 순서를 실수하지 않는 방법"
 description: "PDF 합치기 업무를 더 빠르고 실수 없이 처리하기 위해 먼저 정리할 기준과 실행 순서를 설명합니다."
-pubDate: 2026-09-29T00:00:00+09:00
+pubDate: 2026-09-28T10:40:00+09:00
 category: "PDF"
 tags: ["PDF 합치기", "PDF", "업무 생산성", "업무도구"]
 featured: true
