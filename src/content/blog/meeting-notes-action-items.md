@@ -195,4 +195,4 @@ draft: false
 
 회의 기록 파일이 쌓이기 시작했다면 [업무 파일명 정리 규칙](/blog/work-file-naming-rules/)도 함께 적용하면 회의록과 첨부 문서를 찾기 쉬워집니다.
 
-Microsoft Teams에서 회의 전·중·후에 안건, 메모, 작업을 함께 관리하는 기능은 [Microsoft 지원의 Teams 회의 메모 안내](https://support.microsoft.com/en-us/teams/meetings/take-meeting-notes-in-microsoft-teams)에서 최신 사용 방법을 확인할 수 있습니다.
+Microsoft Teams에서 회의 전·중·후에 안건, 메모, 작업을 함께 관리하는 기능은 [Microsoft 지원의 Teams 회의 메모 안내](https://support.microsoft.com/ko-kr/teams/meetings/take-meeting-notes-in-microsoft-teams)에서 최신 사용 방법을 확인할 수 있습니다.
