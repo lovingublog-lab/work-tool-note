@@ -22,6 +22,14 @@ jobs:
           node-version: '20'
       - run: npm install --no-audit --no-fund
       - run: npm run build
+      - name: Verify SEO output
+        run: |
+          test -f dist/index.html
+          test -f dist/robots.txt
+          test -f dist/sitemap.xml
+          grep -q 'rel="canonical"' dist/index.html
+          grep -q '<urlset' dist/sitemap.xml
+          grep -q 'Sitemap:' dist/robots.txt
       - uses: actions/configure-pages@v5
         with:
           enablement: true
