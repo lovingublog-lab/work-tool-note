@@ -5,7 +5,7 @@ pubDate: 2026-09-29T10:40:00+09:00
 category: "파일 관리"
 tags: ["문서 버전 관리", "파일 버전", "업무 문서", "파일 관리"]
 featured: false
-image: "/images/document-version-management.svg"
+image: "/images/document-version-management-scene.svg"
 imageAlt: "여러 단계의 문서 파일이 화살표를 따라 최신 승인본으로 정리되는 업무 버전 관리 장면 일러스트"
 draft: false
 ---
