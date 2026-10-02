@@ -1,4 +1,4 @@
 ---
 const {post}=Astro.props;const base=import.meta.env.BASE_URL,d=post.data;
 ---
-<article class="card">{d.image&&<a class="card-media" href={`${base}blog/${post.slug}/`}><img src={d.image} alt={d.imageAlt||d.title} width="1200" height="675" loading="lazy" decoding="async"/></a>}<div class="card-body"><div class="kicker">{d.category}</div><h2><a href={`${base}blog/${post.slug}/`}>{d.title}</a></h2><p>{d.description}</p><small>{new Intl.DateTimeFormat('ko-KR',{year:'numeric',month:'long',day:'numeric'}).format(d.pubDate)}</small></div></article>
+<article class="card">{d.image&&<a class="card-media" href={`${base}blog/${post.slug}/`}><img src={d.image} alt={d.imageAlt||d.title} width="1200" height="675" loading="lazy" decoding="async"/></a>}<div class="card-body"><div class="kicker">{d.category}</div><h2><a href={`${base}blog/${post.slug}/`}>{d.title}</a></h2><p>{d.description}</p><small>{new Intl.DateTimeFormat('ko-KR',{year:'numeric',month:'long',day:'numeric',timeZone:'Asia/Seoul'}).format(d.pubDate)}</small></div></article>
