@@ -191,8 +191,6 @@ draft: false
 회의록은 기록 자체가 목적이 아니라 **회의에서 나온 결정을 실제 업무로 이어주는 연결 문서**입니다.
 
 
-## 관련 글과 참고 자료
-
-회의 기록 파일이 쌓이기 시작했다면 [업무 파일명 규칙](/blog/work-file-naming-rules/)도 함께 적용하면 회의록과 첨부 문서를 찾기 쉬워집니다.
+## 참고한 공식 자료
 
 Microsoft Teams에서 회의 전·중·후에 안건, 메모, 작업을 함께 관리하는 기능은 [Microsoft 지원의 Teams 회의 메모 안내](https://support.microsoft.com/ko-kr/teams/meetings/take-meeting-notes-in-microsoft-teams)에서 최신 사용 방법을 확인할 수 있습니다.
