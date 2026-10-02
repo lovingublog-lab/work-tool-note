@@ -149,10 +149,6 @@ report_2026-09-28_v01.pdf
 가장 중요한 것은 복잡한 규칙을 만드는 것이 아니라 **누구나 계속 지킬 수 있을 만큼 단순한 규칙을 하나 정하고 유지하는 것**입니다. 최종_최종2가 반복되고 있다면 오늘부터 새 파일에 v01, v02를 붙이는 것만으로도 문서 관리가 크게 달라집니다.
 
 
-## 관련 글과 참고 자료
-
-파일명 규칙을 정했다면 [프로젝트별 업무 폴더 구조를 단순하게 만드는 방법](/blog/project-folder-structure/)까지 함께 맞추면 파일의 이름과 위치를 같은 기준으로 관리하기 쉽습니다.
-
-파일명 규칙을 정한 뒤 회의 문서까지 같은 방식으로 관리하려면 [회의록 정리 방법](/blog/meeting-notes-action-items/)도 참고할 수 있습니다.
+## 참고한 공식 자료
 
 클라우드 동기화 폴더에서는 서비스별 파일명 제한이 있을 수 있습니다. OneDrive와 SharePoint의 허용되지 않는 문자, 파일·경로 길이 등 최신 제한은 [Microsoft 지원의 OneDrive·SharePoint 제한 안내](https://support.microsoft.com/en-us/onedrive/restrictions-and-limitations-in-onedrive-and-sharepoint)에서 확인할 수 있습니다.
