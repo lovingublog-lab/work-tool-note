@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#edf0f5"/><stop offset="1" stop-color="#edf5ec"/></linearGradient><filter id="sh"><feDropShadow dx="0" dy="13" stdDeviation="16" flood-opacity=".17"/></filter></defs>
+<rect width="1200" height="675" fill="url(#bg)"/><rect y="520" width="1200" height="155" fill="#c4b39e"/>
+<g transform="translate(94 61) rotate(-3 396 230)" filter="url(#sh)"><rect x="0" y="0" width="792" height="493" rx="26" fill="#293747"/><rect x="24" y="24" width="744" height="412" rx="12" fill="#fffefa"/><rect x="24" y="24" width="744" height="64" rx="12" fill="#517c71"/><circle cx="59" cy="53" r="10" fill="#e8c58f"/><circle cx="86" cy="53" r="10" fill="#dae6d0"/><path d="M139 55h385" stroke="#b7d1c4" stroke-width="12" stroke-linecap="round"/>
+<rect x="57" y="110" width="672" height="283" fill="#fcfcfa" stroke="#bac7c4" stroke-width="4"/>
+<rect x="57" y="110" width="672" height="45" fill="#dce8e2"/>
+<path d="M114 110v283M335 110v283M536 110v283M57 155h672M57 202h672M57 249h672M57 296h672M57 343h672" stroke="#bfccc8" stroke-width="4"/>
+<rect x="116" y="251" width="419" height="44" fill="#e9cda8" opacity=".88"/><rect x="537" y="203" width="190" height="44" fill="#e9a8a4" opacity=".85"/>
+<path d="M78 182h23m44 0h160m55 0h140m65 0h136 M76 227h26m44 0h160m55 0h140m65 0h136M78 274h24m44 0h159m55 0h140m65 0h134M78 322h24m44 0h159m55 0h140m65 0h134" stroke="#9eacaf" stroke-width="9" stroke-linecap="round"/>
+<path d="M712 120l8 10 8-10" stroke="#4c8073" stroke-width="5" fill="none"/><path d="M142 411h221" stroke="#819c9f" stroke-width="13" stroke-linecap="round"/><rect x="260" y="494" width="278" height="38" rx="14" fill="#647583"/></g>
+<g transform="translate(902 244) rotate(10 140 154)" filter="url(#sh)"><rect width="280" height="325" rx="17" fill="#fffdf7"/><rect x="26" y="26" width="228" height="55" rx="9" fill="#dce4e6"/><path d="M40 111h197m-197 40h197m-197 40h197m-197 40h197m-197 40h165" stroke="#b4c5c3" stroke-width="15" stroke-linecap="round"/><circle cx="36" cy="319" r="12" fill="#d7a27f"/></g>
+<path d="M927 527q-18-51-53-44l-41 32q-9 13 5 22l42-20-20 74q-2 21 22 25l76-20q19-7 13-28l-18-56" fill="#d9a882" stroke="#b87960" stroke-width="6"/>
+</svg>
